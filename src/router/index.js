@@ -10,57 +10,57 @@ export const constantRouterMap = [
   {
     path: '/',
     component: Layout,
-    name: '导航一',
+    name: '基础',
     iconCls: 'el-icon-message', //图标样式class
+    leaf: true, //只有一个节点
+    children: [{
+      path: '/basis',
+      name: '基础'
+    }]
+  },
+  {
+    path: '/',
+    component: Layout,
+    name: '主题',
+    iconCls: 'el-icon-message',
     children: [
       {
-        path: '/table',
-        name: 'Table',
-        children: [
-          {
-            path: '/table/table1',
-            name: 'SubTable1'
-          }
-        ]
+        path: '/page1',
+        name: '信息发布'
       },
       {
-        path: '/form',
-        name: 'Form'
+        path: '/page2',
+        name: '解读回应'
       },
       {
-        path: '/user',
-        name: '列表'
+        path: '/page3',
+        name: '办事服务'
       }
     ]
   },
   {
     path: '/',
     component: Layout,
-    name: '导航二',
-    iconCls: 'fa fa-id-card-o',
-    children: [
-      {
-        path: '/page4',
-        name: '页面4'
-      },
-      {
-        path: '/page5',
-        name: '页面5'
-      }
-    ]
-  },
-  {
-    path: '/',
-    component: Layout,
-    name: '',
-    iconCls: 'fa fa-address-card',
+    name: '部门',
+    iconCls: 'el-icon-message',
     leaf: true, //只有一个节点
     children: [
       {
-        path: '/page6',
-        name: '导航三'
+        path: '/page4',
+        name: '部门'
       }
     ]
+  },
+  {
+    path: '/',
+    component: Layout,
+    name: '数据交换',
+    iconCls: 'el-icon-message',
+    leaf: true, //只有一个节点
+    children: [{
+      path: '/page5',
+      name: '数据交换'
+    }]
   }
 ]
 

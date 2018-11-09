@@ -3,7 +3,7 @@
     <!-- 头部导航 -->
     <Header></Header>
     <!-- 左侧导航 -->
-    <Sidebar></Sidebar>
+    <Sidebar class="sidebar-container"></Sidebar>
     <!-- 右侧内容 -->
     <div class="main-container">
       <Container></Container>

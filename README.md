@@ -1,4 +1,4 @@
-# vue-admin-demo
+# vue-cms
 
 > A Vue.js project
 
@@ -35,7 +35,7 @@ npm test
 4. 梳理系统布局，大致分为头部导航、侧边栏、面包屑以及右侧内容等；
 5. 新增views目录，专门存放页面布局，``views/layout/components``下建立对应的头部导航（Header）、侧边栏（Sidebar）、面包屑（）以及右侧内容（Container）等目录，Layout.vue是布局总入口;
 6. 在``main.js``中引入``element ui``，并在系统中安装element ui（npm i element-ui -S），element ui会对应安装到系统中，并在package.json中的dependencies存放；
-7. npm install xxx -dev需要安装的有：element ui、axios；npm install xxx --save-dev需要安装的有：axios-mock-adapter；
+7. npm install xxx -dev需要安装的有：element ui、axios；npm install xxx --save-dev需要安装的有：axios-mock-adapter、sass、sass-loader、node-sass；
 
 注意：在components命名时，最好不要用h5自带标签以及关键词去命名。
 
